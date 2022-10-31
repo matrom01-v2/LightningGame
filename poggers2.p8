@@ -14,6 +14,7 @@ deaths = 0
 // higheest level allowed to be
 // played
 max_level = 5
+test_level = 5
 -->8
 --player
 player = {
@@ -37,6 +38,9 @@ player = {
  end,
  
  change_level = function(player)
+  if (test_level != 0) then
+  	level = test_level
+  end
 		if (level == 1) then
 		 player.x = 0
 		 player.y = 48
